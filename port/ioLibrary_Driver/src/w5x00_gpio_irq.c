@@ -47,6 +47,8 @@ void wizchip_gpio_interrupt_initialize(uint8_t socket, void (*callback)(void))
     ret_val = ctlwizchip(CW_SET_INTRMASK, (void *)&reg_val);
 
     callback_ptr = callback;
+    gpio_init(PIN_INT);
+    gpio_pull_up(PIN_INT);
     gpio_set_irq_enabled_with_callback(PIN_INT, GPIO_IRQ_EDGE_FALL, true, &wizchip_gpio_interrupt_callback);
 }
 
