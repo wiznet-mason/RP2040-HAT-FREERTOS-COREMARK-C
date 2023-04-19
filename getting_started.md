@@ -4,11 +4,6 @@ These sections will guide you through a series of steps from configuring develop
 
 - [**Development environment configuration**](#development_environment_configuration)
 - [**Hardware requirements**](#hardware_requirements)
-- [**FreeRTOS example structure**](#freertos_example_structure)
-- [**FreeRTOS example testing**](#freertos_example_testing)
-- [**How to use port directory**](#how_to_use_port_directory)
-
-
 
 <a name="development_environment_configuration"></a>
 ## Development environment configuration
